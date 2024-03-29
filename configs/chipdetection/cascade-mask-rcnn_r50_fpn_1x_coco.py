@@ -9,9 +9,9 @@ model =dict(
     rpn_head=dict(
         anchor_generator=dict(
         type='AnchorGenerator',
-        scales=[1],
+        scales=[2],
         ratios=[1.0],
-        strides=[4, 8, 16, 32, 64])
+        strides=[4, 8, 16, 32, 512])
     ),
     roi_head=dict(
         bbox_head=[
